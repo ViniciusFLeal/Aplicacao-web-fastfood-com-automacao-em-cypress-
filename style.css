@@ -1,0 +1,257 @@
+/* Layout principal */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.colunas {
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+}
+.produtos, .pedido {
+    flex: 1;
+    min-width: 0;
+}
+.colunas > .pedido {
+    margin-top: -0.10cm;
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    color: #d32f2f;
+}
+.produtos h2, .pedido h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 24px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+/* Produtos */
+.produtos ul {
+    list-style: none;
+    padding: 0;
+}
+.produtos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+.produtos button {
+    background: #d32f2f;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.produtos button:hover {
+    background: #b71c1c;
+}
+
+/* Resumo do Pedido */
+.pedido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.pedido .pedido-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+.pedido button {
+    display: inline-block;
+    margin: 4px;
+}
+#resumo-pedido {
+    margin-bottom: 12px;
+}
+#total-pedido {
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #388e3c;
+}
+#mensagem {
+    margin-top: 16px;
+    font-size: 1.1em;
+    color: #d32f2f;
+    text-align: center;
+}
+
+/* Tabela do pedido */
+.pedido-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 12px;
+}
+.pedido-table th, .pedido-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.pedido-table th {
+    background: #f5f5f5;
+}
+.pedido-table td button {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.pedido-table td button:hover {
+    background: #0d47a1;
+}
+
+/* Botões principais */
+#confirmar-pedido, #cancelar-pedido {
+    background: #388e3c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+#cancelar-pedido {
+    background: #d32f2f;
+}
+#confirmar-pedido:hover {
+    background: #2e7d32;
+}
+#cancelar-pedido:hover {
+    background: #b71c1c;
+}
+
+/* Fundo */
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8 url('comida-de-rua-natureza-morta.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8 url('comida-de-rua-natureza-morta.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.colunas {
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+}
+.produtos, .pedido {
+    flex: 1;
+    min-width: 0;
+}
+h1 {
+    text-align: center;
+    color: #d32f2f;
+}
+h2 {
+    color: #333;
+    margin-top: 24px;
+}
+.produtos ul {
+    list-style: none;
+    padding: 0;
+}
+.produtos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+.produtos button {
+    background: #d32f2f;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.produtos button:hover {
+    background: #b71c1c;
+}
+.pedido {
+    margin-top: 32px;
+}
+#resumo-pedido {
+    margin-bottom: 12px;
+}
+.pedido-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 12px;
+}
+.pedido-table th, .pedido-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.pedido-table th {
+    background: #f5f5f5;
+}
+.pedido-table td button {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.pedido-table td button:hover {
+    background: #0d47a1;
+}
+#total-pedido {
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #388e3c;
+}
+#mensagem {
+    margin-top: 16px;
+    font-size: 1.1em;
+    color: #d32f2f;
+    text-align: center;
+}
+#confirmar-pedido, #cancelar-pedido {
+    background: #388e3c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+#cancelar-pedido {
+    background: #d32f2f;
+}
+#confirmar-pedido:hover {
+    background: #2e7d32;
+}
+#cancelar-pedido:hover {
+    background: #b71c1c;
+}
